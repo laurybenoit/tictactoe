@@ -38,6 +38,10 @@ function getWinner() {
 };
 
 function handleTurn() {
+    if (win) {
+        congratsSound = new Audio("win.mp3");
+        congratsSound.play();
+    };
     let idx = cells.findIndex(function(cell) {
         return cell === event.target;
     });
