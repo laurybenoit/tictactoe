@@ -39,8 +39,9 @@ function getWinner() {
 
 function handleTurn() {
     if (win) {
-        congratsSound = new Audio("win.mp3");
-        congratsSound.play();
+        document.getElementById('gameboard').removeEventListener('click', handleTurn);
+        document.getElementById('gameboard').removeEventListener('click', playsound);
+        return;
     };
     let idx = cells.findIndex(function(cell) {
         return cell === event.target;
@@ -49,6 +50,10 @@ function handleTurn() {
         gameboard[idx] = turn;
         turn = turn === 'O' ? 'X' : 'O';
         win = getWinner();
+        if (win) {
+            congratsSound = new Audio("win.mp3");
+            congratsSound.play();
+        };
         render();
     }
 };
