@@ -35,6 +35,9 @@ Main issues I encounter:
 - Writing a condition for winner
 - Stoping the game if there is a winner
 
+## AWS Amplify 
+This application is deploy using AWS Amplify ![AWS Amplify logo](amplify.jpeg)
+
 
 ## Finish Product 
 ![Tic Tac Toe Game](tictactoe.png)
