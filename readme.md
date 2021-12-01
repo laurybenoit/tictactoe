@@ -7,6 +7,7 @@ Thanks for visiting [My Tic Tac Toe Game ](https://main.d1gjmj53w24nj7.amplifyap
 - HTML
 - CSS
 - Javascript
+- AWS Amplify
 - Notion
 
 
