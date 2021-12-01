@@ -22,9 +22,6 @@ const messages = document.querySelector('h4');
 document.getElementById('newgame').addEventListener('click', newGame);
 
 
-
-
-
 function getWinner() {
     let winner = null;
     winningCombos.forEach((combo, index) => {
@@ -76,6 +73,7 @@ function init() {
     '', '', '',
     '', '', ''
     ];
+    turn = 'O'
     win = undefined;
     render();
 }; 
