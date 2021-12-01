@@ -7,6 +7,7 @@ Thanks for visiting [My Tic Tac Toe Game ](https://main.d1gjmj53w24nj7.amplifyap
 - HTML
 - CSS
 - Javascript
+- Bootstrap
 - AWS Amplify
 - Notion
 
@@ -35,6 +36,13 @@ Main issues I encounter:
 - Initializing the game board
 - Writing a condition for winner
 - Stoping the game if there is a winner
+
+## What I have Learned 
+- DOM element to manipulated different part of my project
+
+## Changes/Later Implementation
+- Spend so long creating the Board, and the look of it
+- I would love to create a backend that would capture the player data such as name and their previous score  
 
 ## AWS Amplify 
 This application is deploy using AWS Amplify ![AWS Amplify logo](amplify.jpeg)
