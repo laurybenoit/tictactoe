@@ -1,9 +1,9 @@
 body {
-    background-color: whitesmoke;
+    background-color: #BFCBA8;
     font-family: 'Bungee', cursive;
     text-overflow: ellipsis;
     text-align: start;
-    color: rgb(207, 13, 13);
+    color: #5B8A72;
 }
     
  
@@ -11,7 +11,7 @@ h1{
     font-family: 'Bungee Outline', cursive;
     font-size: 85px;
     text-align: center;
-    color: rgb(207, 13, 13);
+    color: #464F41;
         
     
 }
@@ -20,7 +20,7 @@ h4{
     font-family: 'Bungee', cursive;
     text-overflow: ellipsis;
     text-align: center;
-    color:rgb(207, 13, 13);
+    color: #C06014;
 }
     
     
@@ -44,26 +44,28 @@ h4{
     
     
 .cell {
-    background-color: whitesmoke;
-    border: 2px solid rgb(207, 13, 13);
+    background-color: #CEE6B4;
+    border: 2px solid #464F41;
     height: 140px;
     width: 140px;
     font-size: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #7D5E2A;
 }
     
     
 #newgame {
-
+    background-color: #CEE6B4 ;
     font-family: 'Bungee', cursive;
     font-size: 15px;
     text-align: center;
     align-items: center;
     font-size: 20px;
-    border: 1px solid rgb(207, 13, 13);
+    border: 1px solid #464F41;
     height: 75px;
     width: 100px;
     margin: 10px;
+    color: #7D5E2A;
 }
