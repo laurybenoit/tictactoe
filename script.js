@@ -18,12 +18,9 @@ let audio;
 
 
 const cells = Array.from(document.querySelectorAll('#gameboard div'));
-
-
-document.getElementById('gameboard').addEventListener('click', handleTurn);
-document.getElementById('gameboard').addEventListener('click', playsound);
 const messages = document.querySelector('h4');
-document.getElementById('newgame').addEventListener('click', init);
+document.getElementById('newgame').addEventListener('click', newGame);
+
 
 
 
@@ -50,10 +47,14 @@ function handleTurn() {
         gameboard[idx] = turn;
         turn = turn === 'O' ? 'X' : 'O';
         win = getWinner();
-        if (win) {
+        if (win === 'O' || win === 'X') {
             congratsSound = new Audio("win.mp3");
             congratsSound.play();
         };
+        if (win === 'T'){
+            let tie = new Audio('tie.mp3')
+            tie.play();
+        }
         render();
     }
 };
@@ -63,12 +64,19 @@ function playsound(){
         audio.play();
 }
 
+function newGame() {
+    init();
+    document.getElementById('gameboard').addEventListener('click', handleTurn);
+    document.getElementById('gameboard').addEventListener('click', playsound);
+}
+
 function init() {
     gameboard = [
     '', '', '',
     '', '', '',
     '', '', ''
     ];
+    win = undefined;
     render();
 }; 
 
@@ -79,5 +87,5 @@ function render() {
     messages.textContent = win === 'T' ? `We have a tie` : win ? `Player ${win} wins the game!` : `Its Player ${turn}'s turn!`;
     };
 
-init();
+newGame();
 
