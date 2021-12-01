@@ -1,100 +1,41 @@
 # Tic Tac Toe Game 
 
-# Markdown Cheat Sheet
-
 Thanks for visiting [My Tic Tac Toe Game ](https://main.d1gjmj53w24nj7.amplifyapp.com/)!
 
 
-## Background
-
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
-
-### Heading
-
-# H1
-## H2
-### H3
-
-### Bold
-
-**bold text**
-
-### Italic
-
-*italicized text*
-
-### Blockquote
-
-> blockquote
-
-### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-- First item
-- Second item
-- Third item
-
-### Code
-
-`code`
-
-### Horizontal Rule
-
----
-
-### Link
-
-[Markdown Guide](https://www.markdownguide.org)
-
-### Image
-
-![alt text](https://www.markdownguide.org/assets/images/tux.png)
-
-## Extended Syntax
-
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-### Table
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-### Fenced Code Block
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
-### Footnote
-
-Here's a sentence with a footnote. [^1]
-
-[^1]: This is the footnote.
-
-### Heading ID
-
-### My Great Heading {#custom-id}
-
-### Definition List
-
-term
-: definition
+## Technology Used
+- HTML
+- CSS
+- Javascript
+- Notion
 
 
-### Task List
+## Requirements 
+*Render a game board in the browser
+*Switch turns between X and O (or whichever markers you select)
+*Visually display which side won if a player gets three in a row, or show a draw if neither player wins
+*Include separate HTML / CSS / JavaScript files
+*Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
+*Use JavaScript for DOM manipulation
+*Deploy your game online, where the rest of the world can access it
+*Use semantic markup for HTML and CSS (adhere to best practices)
+*Have well-formatted, and well-commented code
 
-- 
-- 
-- 
+
+## Kanban Method
+To cover all the requirements Kanban method is used as shown below. 
+![Notion Requirement Board](notion1.png)
+Then Breaking the requirements to smaller 
+![Notion Progression Board or Kanban](notion2.png)
+
+## Issues 
+Main issues I encounter:
+- Understanding the logic of the game 
+- Initializing the game board
+- Writing a condition for winner
+- Stoping the game if there is a winner
+
+
+## Finish Product 
+![Tic Tac Toe Game](tictactoe.png)
 
